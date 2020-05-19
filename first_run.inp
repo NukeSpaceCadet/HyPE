@@ -1,0 +1,74 @@
+[Simulation Parameters]
+#simulation name, will be the name of the output file
+name=paraf_n2o_micro_out
+#time step duration, s
+dt=0.00001
+#total burn time, s
+tb=3
+#file name for propellant combo data table
+data=paraf_n2o.dat
+
+[Engine Parameters]
+#ambient pressure (Pa)
+Pam=101325
+#initial tank feed pressure (Pa)
+Pt=5170000
+#Injector discharge coefficient
+Cd=0.77
+#total injector nozzle orifice area (all orifces) (m2)
+Ai=2.8274e-7
+#physical state of oxidizer, 1=gas, 2=liquid
+OXmodl=1
+#regression rate model, 1-6
+rmodl=2
+#number of burning ports
+Np=1
+#port diameter (m)
+D=0.005
+#Port (fuel grain) length (m)
+L=0.056
+#nozzle throat area (m2)
+At=5.067e-6
+#nozzle expansion ratio
+epsilon=15
+#nozzle expansion correction
+lambda=0.98
+
+[Chemical Properties]
+#mass of oxidizer that boils off (thus contributing to feed pressure, increasing ullage) (kg)
+mboil=0.001
+#oxidizer molar mass (kg/mol)
+molO=0.044
+#oxidizer gamma
+gammaO=1.27
+#density of liquid oxidizer (kg/m3)
+rhoO=1980
+#oxidizer temperature in tank (K)
+T=290
+#fuel density (kg/m3)
+rhoF=900
+#regression rate coefficient
+a=0.0000206
+#flux regression rate exponent
+n=0.75
+#length regression rate exponent
+me=-0.15
+
+[Initial Values]
+#Initial oxidizer mass (kg)
+mOX=0.008
+#initial ullage volume (m3)
+Vol=6e-6
+#initial oxidizer mass flow rate (kg/s)
+mdotO=0.005
+#initial O/F
+OF=3
+#initial regression rate (m/s)
+rdot=0
+
+[Alt Regress Params]
+## Alternate regression rate parameters
+phi=0.05
+d=0.5
+#multiplier for high-regression rate fuels (i.e. paraffin)
+mult=2.5
