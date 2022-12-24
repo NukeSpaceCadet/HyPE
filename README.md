@@ -1,5 +1,5 @@
 # HyPE
-A hybrid rocket simulation code (Hybrid Performance Estimator, HyPE)
+A hybrid rocket engine simulation code (Hybrid Performance Estimator, HyPE)
 
 This code uses lookup tables for propellant combos (varying O/F ratios and chamber pressures). These can be generated
 using Propep or CEA. To add new propellants, a new table will have to be generated. A table for one propellant cobo is included
