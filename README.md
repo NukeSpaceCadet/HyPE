@@ -5,6 +5,6 @@ This code uses looku[ tables for propellant combos (varying O/F ratios and chamb
 To add new propellants, a new table will have to be generated. A table for one propellant cobo is included
 and can be used as a template.
 
-The input to the code is a plain-text xml file. A template is included, and should run as-is to test the code.
+The input to the code is a plain-text file. A template is included for a whip-cream nitrous engine, and can be run as-is to test the code.
 
-to run the code: $python HyPE.py input_filename.in
+to run the code: ./python HyPE.py input_filename.in
