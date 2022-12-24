@@ -6,5 +6,7 @@ using Propep or CEA. To add new propellants, a new table will have to be generat
 and can be used as a template.
 
 The input to the code is a plain-text file. A template is included for a whip-cream nitrous engine, and can be run as-is to test the code.
+The code generates a plain-text output file with temperatures, pressures, mass flow rates, and specific impulse vs time, and saves plots
+as a png bitmap.
 
 to run the code: ./python HyPE.py input_filename.in
